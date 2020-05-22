@@ -4,7 +4,7 @@ date: 2019-04-11 04:00:00
 tags: [VUE, 开发笔记]
 ---
 
-# Vuex 知识
+## Vuex 知识
 
 *  ### 基础知识总结
 
@@ -15,6 +15,8 @@ tags: [VUE, 开发笔记]
 * mutation 用来注册改变数据状态（同步）               $store.commit( "mutation名称 ")
 
 * action 解决异步改变共享数据( 异步 )                        $store.dispatch("action名称" ，data)
+
+  ​                                                                                            'user/login'  (modules中user 下的login)     
 
 * getters 用来对共享数据进行过滤操作（计算属性）$store.getters.xx    
 
@@ -204,10 +206,58 @@ const store =new Vuex.Store({
 
   ```js
 computed: {
+    //对象写法
     ...mapState({
     user: state => state.user,//从全局存储里取出当前登录用户信息
     menuTabList: state => state.menuTab.menuTabList,//从全局存储里取出当前打开的菜单tab
    })
+    //数组写法
+   ...mapState([  'user',  'menuTabList'  ])
 }
   ```
 
+```js
+computed: {
+      ...mapGetters([ 'singer'  ]),
+      }
+      //转换
+computed: {
+   singer() {
+        return this.$store.state.singer
+    }
+ }
+```
+
+
+
+
+
+
+
+//只用state的用法
+
+/store/modules/goods
+
+```js
+export default{
+  state:{
+  AA:0
+  }
+}
+```
+
+//  xx.vue
+
+```JS
+//import store from 'vuex'; //引用  (都用了$store 不用再引入)
+AA: {
+			get: function() {
+				return this.$store.state.goods.AA;
+			},
+			set: function(val) {
+				this.$store.state.goods.AA = val;
+			}
+		},	
+```
+
+> 这样就能像使用  data（）{     retrun{    AA:0            }} 一样使用AA这个变量了

@@ -12,7 +12,7 @@
     name: "FixedHeader",
     data() {
       return {
-        description: "",
+        description: "111",
         isPosts: false,
         tagName: ""
       };
@@ -26,9 +26,10 @@
     computed: {
       title() {
         let t;
-        switch (this.$route.path.slice(1, 6)) {
+        switch (this.$route.path.slice(1,6)) {
           case "posts":
             t = this.$page.title;
+            debugger
             this.isPosts = true;
             this.description = this.$page.lastUpdated
               ? "最后更新时间：" + this.$page.lastUpdated

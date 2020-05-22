@@ -33,7 +33,7 @@ export default {
     Home: () => import("imComponents/Home")
   },
   computed: {
-    whichComponent() {
+    whichComponent () {
       let w = "";
       if (typeof window === "undefined") {
         switch (this.$page.path.slice(1, 6)) {
@@ -110,7 +110,6 @@ export default {
   transition: 0.2s ease-in-out;
   padding: 0;
   overflow: hidden;
-  padding-bottom: 113px;
   width: 100%;
 }
 

@@ -1,6 +1,6 @@
 ---
 title: Element-UI表单校验
-date: 2018-10-01 18:00:00
+date: 2018-10-01 
 tags: [Element-UI,开发笔记]
 ---
 

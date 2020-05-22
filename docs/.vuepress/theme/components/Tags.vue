@@ -31,7 +31,7 @@
           class="list"
         >
           <el-card>
-            <div class="post-title-time ellipsis">{{post.lastUpdated}}</div>
+            <div class="post-title-time ellipsis">{{post.lastUpdated.slice(0,10)}}</div>
             <router-link :to="post.path" class="post-title-link">{{post.title}}</router-link>
           </el-card>
         </el-col>

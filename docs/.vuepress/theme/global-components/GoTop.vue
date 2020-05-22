@@ -61,7 +61,7 @@ export default {
   transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   position: fixed;
   right: 15px;
-  bottom: 10px;
+  bottom: 70px;
   z-index: 69;
   opacity: 0;
   transform: scale(0);

@@ -7,7 +7,7 @@
       align="center"
       class="footer-warp"
     >
-      <el-col
+      <!-- <el-col
         :span="24"
         class="footer-top"
       >
@@ -20,7 +20,7 @@
             >知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a>
           </span>
         </p>
-      </el-col>
+      </el-col> -->
       <el-col
         :span="24"
         class="footer-bottom"
@@ -29,11 +29,11 @@
           粤ICP备19121992号-1
           </span>
           <span>
-            | Power by
+            | 主题
             <a
-              href="https://vuepress.vuejs.org/zh/"
+              href="https://github.com/zhhlwd/vuepress-theme-indigo-material"
               target="_blank"
-            > | VuePress</a>  
+            > vuepress-theme-indigo-material</a>
           </span>
         </p>
       </el-col>
@@ -58,12 +58,11 @@ export default {
 <style lang="stylus" scoped>
 .el-footer {
   padding: 0;
-  margin-top: -113px;
 }
 
 .container-footer {
   overflow: hidden;
-  height: 113px !important;
+  height: 50px !important;
   text-align: center;
   width: 100%;
   line-height: 1.6;
@@ -74,7 +73,7 @@ export default {
   }
 
   a {
-    color: rgba(255, 255, 255, 0.88);
+    color: rgba(255, 255, 255, 0.6);
     border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
   }
 

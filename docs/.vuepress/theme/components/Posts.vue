@@ -406,6 +406,13 @@ export default {
     border-radius: 0;
     box-shadow: none;
   }
+  .Mycomment {
+    margin-right: 0;
+    .page {
+      margin: 16px 0px;
+      padding: 10px 5px;
+    }
+  }
 }
 .toc-link:before,
 .toc-link:after {
