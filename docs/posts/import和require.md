@@ -1,5 +1,5 @@
 ---
-title: Element-UI中分页组件在项目中如何用
+title: import和require
 date: 2020-05-22 ‏‎11:31:38
 tags: [JS, ES6, 开发笔记]
 ---

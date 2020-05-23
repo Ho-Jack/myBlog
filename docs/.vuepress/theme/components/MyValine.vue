@@ -4,8 +4,8 @@
     class="page"
   >
     <section class="page-edit">
-      <div>
-        <!-- id 将作为查询条件 -->
+      <!-- <div>
+       // id 将作为查询条件
         <span
           class="leancloud-visitors"
           data-flag-title="Your Article Title"
@@ -13,7 +13,7 @@
           <em class="post-meta-item-text">阅读量： </em>
           <i class="leancloud-visitors-count"></i>
         </span>
-      </div>
+      </div> -->
       <h3>
         <a href="javascript:;"></a>
         评 论：
@@ -40,7 +40,7 @@ export default {
       path: window.location.pathname,
       visitor: true,
       avatar: 'mm',
-      placeholder: '各路大神，请指教'
+      placeholder: '各路大神，小弟技浅，若有错误，不吝赐教'
     });
   },
 }
